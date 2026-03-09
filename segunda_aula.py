@@ -89,3 +89,51 @@ check1 = float(input("Checkpoint 1 = "))
 check2 = float(input("Checkpoint 2 = "))
 media = (check1 + check2)/2
 print(f"Média = {media:.1f}")
+
+#Exercícios
+# 4. Faça um programa que peça dois números inteiros. Imprima a soma desses dois números na tela.
+
+numero1 = float(input("numero 1 = "))
+numero2 = float(input("numero 2 = "))
+resul = (numero1 + numero2)/2
+print(f"Média = {resul:.1f}")
+
+# 5. Escreva um programa que leia um valor em metros e o exiba convertido em milímetros.
+metro = int(input("Digite o valor em Metros = "))
+milimetro = metro * 1000
+print(f"Média = {milimetro}")
+
+# 6. Escreva um programa que leia a quantidade de dias, horas, minutos e segundos do usuário. Calcule o total em segundos.
+
+dias = int(input("Digite o de dias = "))
+horas = int(input("Digite o de horas = "))
+minutos = int(input("Digite o de minutos = "))
+segundos= int(input("Digite o de segundos = "))
+segundosTotais = (dias * 24 * 60 * 60) +(horas * 60 * 60) + (minutos * 60) + segundos
+#horas = dias * 24
+#minutos = horas * 60
+#segundos = minutos * 60
+print(f"O total de segundos dos dias informados é = {segundosTotais}")
+
+# 7. Faça um programa que calcule o aumento de um salário. Ele deve solicitar o valor do salário e a porcentagem do aumento. Exiba o valor do aumento e do novo salário.
+
+salario = float(input("Digite o valor do salario = "))
+aumento = float(input("Digite o valor do aumento = "))
+salarioAumento = salario * (aumento/100)
+# 8. Faça um programa que solicite o preço de uma mercadoria e o percentual de desconto. Exiba o valor do desconto e o preço a pagar.
+
+
+# 9. Escreva um programa que calcule o tempo de uma viagem de carro. Pergunte a distância a percorrer e a velocidade média esperada para a viagem.
+
+
+# 10. Escreva um programa que converta uma temperatura digitada em ºC em ºF. A fórmula para essa conversão é F = ((9 x C) / 5) + 32
+
+
+# 11. Escreva um programa que pergunte a quantidade de km percorridos por um carro alugado pelo usuário, assim como a quantidade de dias pelos quais o carro foi alugado. Calcule o preço a pagar, sabendo que o carro custa R$60 por dia e R$0,15 por km rodado.
+
+
+# 12. Escreva um programa que receba 2 valores do tipo inteiro x e y, e calcule o valor de z: z = (x2 + y2) / (x – y)2
+
+
+# 13. Escreva um programa que receba o salário de um funcionário (float) e retorne o resultado do novo salário com reajuste de 35%.
+
