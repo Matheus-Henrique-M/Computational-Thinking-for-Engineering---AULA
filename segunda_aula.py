@@ -119,22 +119,44 @@ print(f"O total de segundos dos dias informados é = {segundosTotais}")
 
 salario = float(input("Digite o valor do salario = "))
 aumento = float(input("Digite o valor do aumento = "))
-salarioAumento = salario * (aumento/100)
-# 8. Faça um programa que solicite o preço de uma mercadoria e o percentual de desconto. Exiba o valor do desconto e o preço a pagar.
+salarioAumento = salario + (salario * (aumento/100))
+print(f"o valor do salario é: {salario}")
+print(f"o valor do salario com aumento é: {salarioAumento}")
 
+# 8. Faça um programa que solicite o preço de uma mercadoria e o percentual de desconto. Exiba o valor do desconto e o preço a pagar.
+mercadoria = float(input("Digite o valor da mercadoria: "))
+percDesc = float(input("Digite o percentual de desconto: "))
+mercadoriaDesc = mercadoria - (mercadoria * (percDesc/100))
+print("O valor do desconto é ", percDesc,"%" f" e o valor a se pagar com o desconto e {mercadoriaDesc:.2f}")
 
 # 9. Escreva um programa que calcule o tempo de uma viagem de carro. Pergunte a distância a percorrer e a velocidade média esperada para a viagem.
 
+dist = float(input("Digite a distancia a percorrer: "))
+velociMedia = float(input("Digite a velocidade media esperada: "))
+tempo = dist / velociMedia
+print(f"O tempo da viagem será: {tempo:.2f}h")
 
 # 10. Escreva um programa que converta uma temperatura digitada em ºC em ºF. A fórmula para essa conversão é F = ((9 x C) / 5) + 32
 
+grauC = float(input("Digite a quantidade de Graus ºC : "))
+f = ((9 * grauC) / 5) + 32
+print(f"O conversao de graus ºC em ºF é: {f:.1f}")
 
 # 11. Escreva um programa que pergunte a quantidade de km percorridos por um carro alugado pelo usuário, assim como a quantidade de dias pelos quais o carro foi alugado. Calcule o preço a pagar, sabendo que o carro custa R$60 por dia e R$0,15 por km rodado.
 
+km = int(input("Digite a quantidade de km percorrido: "))
+dias = int(input("Digite a quantidade de dias gastos: "))
+precoPagar = (km * 0.15) + (dias * 60)
+print(f"O valor a ser pago pelos dias e km rodados é {precoPagar:.2f}")
 
 # 12. Escreva um programa que receba 2 valores do tipo inteiro x e y, e calcule o valor de z: z = (x2 + y2) / (x – y)2
-
+x = int(input("Digite o valor de X: "))
+y = int(input("Digite o valor de Y: "))
+z = (x ** 2 + y ** 2) / (x - y ) **2
+print("O valor de z é: ", z)
 
 # 13. Escreva um programa que receba o salário de um funcionário (float) e retorne o resultado do novo salário com reajuste de 35%.
 
-print()
+salarioFunc = float(input("Digite o valor do salario = "))
+salarioReajuste = salario + (salario * (35/100))
+print(f"o valor do salario com reajuste é: {salarioReajuste}")
